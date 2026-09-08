@@ -6,46 +6,30 @@
   <meta name="description" content="Matthew Smith — systems administrator and builder working across AI applications, automation, infrastructure, and data platforms." />
   <title>Matthew Smith | Systems, Automation & AI</title>
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0b0d10;
-      --panel: #11151a;
-      --text: #f2f4f7;
-      --muted: #aab2bd;
-      --line: #242b33;
-      --accent: #8ab4ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    main { max-width: 980px; margin: 0 auto; padding: 72px 24px 56px; }
-    header { margin-bottom: 48px; }
-    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
-    h1 { font-size: clamp(2.4rem, 7vw, 4.8rem); line-height: 1; margin: 12px 0 18px; letter-spacing: -.04em; }
-    .intro { max-width: 760px; font-size: 1.16rem; color: var(--muted); }
-    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-    a.button {
-      display: inline-block; padding: 10px 14px; border: 1px solid var(--line); border-radius: 9px;
-      color: var(--text); text-decoration: none; background: var(--panel);
-    }
-    a.button:hover { border-color: var(--accent); }
-    section { margin-top: 46px; }
-    h2 { font-size: 1.25rem; margin-bottom: 18px; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
-    .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
-    .card p { margin: 0 0 14px; color: var(--muted); }
-    .card a { color: var(--accent); text-decoration: none; font-weight: 650; }
-    .stack { font-size: .9rem; color: var(--muted); }
-    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
-    .tag { border: 1px solid var(--line); background: var(--panel); padding: 6px 9px; border-radius: 999px; color: var(--muted); font-size: .88rem; }
-    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
-    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } main { padding-top: 48px; } }
+    :root { color-scheme: dark; --bg:#0b0d10; --panel:#11151a; --text:#f2f4f7; --muted:#aab2bd; --line:#242b33; --accent:#8ab4ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+    main { max-width:980px; margin:0 auto; padding:72px 24px 56px; }
+    header { margin-bottom:48px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem; }
+    h1 { font-size:clamp(2.4rem,7vw,4.8rem); line-height:1; margin:12px 0 18px; letter-spacing:-.04em; }
+    .intro { max-width:760px; font-size:1.16rem; color:var(--muted); }
+    .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    a.button { display:inline-block; padding:10px 14px; border:1px solid var(--line); border-radius:9px; color:var(--text); text-decoration:none; background:var(--panel); }
+    a.button:hover { border-color:var(--accent); }
+    section { margin-top:46px; }
+    h2 { font-size:1.25rem; margin-bottom:18px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; }
+    .card.featured { grid-column:1 / -1; border-color:#33455f; }
+    .card h3 { margin:0 0 8px; font-size:1.1rem; }
+    .card p { margin:0 0 14px; color:var(--muted); }
+    .card a { color:var(--accent); text-decoration:none; font-weight:650; }
+    .stack { font-size:.9rem; color:var(--muted); }
+    .skills { display:flex; flex-wrap:wrap; gap:8px; }
+    .tag { border:1px solid var(--line); background:var(--panel); padding:6px 9px; border-radius:999px; color:var(--muted); font-size:.88rem; }
+    footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+    @media (max-width:700px) { .grid { grid-template-columns:1fr; } .card.featured { grid-column:auto; } main { padding-top:48px; } }
   </style>
 </head>
 <body>
@@ -53,11 +37,7 @@
   <header>
     <div class="eyebrow">Systems · Automation · AI Applications</div>
     <h1>Matthew Smith</h1>
-    <p class="intro">
-      Systems Administrator with a background spanning enterprise applications, infrastructure, IT/OT integration,
-      automation, data platforms, and AI-enabled systems. I like building practical solutions that cross traditional
-      boundaries between software, infrastructure, networking, and operations.
-    </p>
+    <p class="intro">Systems Administrator with a background spanning enterprise applications, infrastructure, IT/OT integration, automation, data platforms, and AI-enabled systems. I build practical solutions that cross traditional boundaries between software, infrastructure, networking, and operations.</p>
     <div class="links">
       <a class="button" href="https://github.com/KuRue">GitHub</a>
       <a class="button" href="mailto:matt@kurue.com">Email</a>
@@ -67,6 +47,13 @@
   <section>
     <h2>Selected projects</h2>
     <div class="grid">
+      <article class="card featured">
+        <h3>Bram</h3>
+        <p>Android-first local AI runtime and agent harness with hardware-aware model execution, OpenAI-compatible remote runtimes, tool calling, context management, isolated native inference, and correctness-gated accelerator validation.</p>
+        <div class="stack">Kotlin · Jetpack Compose · LLMs · llama.cpp/JNI · OpenAI-compatible APIs · Function Tools · Android AIDL · CPU/NPU/GPU Validation · GitHub Actions</div>
+        <p><a href="https://github.com/KuRue/bram">View repository →</a></p>
+      </article>
+
       <article class="card">
         <h3>ParcelStats</h3>
         <p>AI-powered parcel tracking platform with delivery prediction, route analysis, carrier integrations, and a production-oriented self-hosted stack.</p>
@@ -100,16 +87,11 @@
   <section>
     <h2>Current focus</h2>
     <div class="skills">
-      <span class="tag">Python</span><span class="tag">LLMs & RAG</span><span class="tag">REST APIs</span>
-      <span class="tag">Power Automate</span><span class="tag">Microsoft 365 / Entra</span><span class="tag">PostgreSQL</span>
-      <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Cloudflare Zero Trust</span>
-      <span class="tag">Linux</span><span class="tag">SCADA / IT-OT</span><span class="tag">Systems Integration</span>
+      <span class="tag">Python</span><span class="tag">LLMs & RAG</span><span class="tag">REST APIs</span><span class="tag">Power Automate</span><span class="tag">Microsoft 365 / Entra</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Cloudflare Zero Trust</span><span class="tag">Linux</span><span class="tag">SCADA / IT-OT</span><span class="tag">Systems Integration</span>
     </div>
   </section>
 
-  <footer>
-    Built around projects I use to explore application development, AI, automation, and infrastructure engineering.
-  </footer>
+  <footer>Projects spanning AI application development, automation, infrastructure, and systems integration.</footer>
 </main>
 </body>
 </html>
